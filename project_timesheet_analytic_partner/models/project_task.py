@@ -12,6 +12,7 @@ class ProjectTask(models.Model):
         res = super(ProjectTask, self).write(vals)
         if vals.get('partner_id') is not None:
             # Change the other partner of all tasks works timesheet entries
-            self.mapped('work_ids.hr_analytic_timesheet_id').write(
+            for work in self.work_ids:
+                work.hr_analytic_timesheet_id.write(
                 {'other_partner_id': vals['partner_id']})
         return res
