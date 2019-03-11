@@ -1,13 +1,11 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* service_desk
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-14 09:22+0000\n"
-"PO-Revision-Date: 2013-11-14 09:22+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,18 +14,24 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: service_desk
-#: model:ir.model,name:service_desk.model_project_project
-msgid "Project"
+#: model:ir.model,name:service_desk.model_account_analytic_account
+msgid "Analytic Account"
 msgstr ""
 
 #. module: service_desk
-#: model:ir.model,name:service_desk.model_account_analytic_location
-msgid "account.analytic.location"
+#: field:account.analytic.account,contact_id:0
+#: field:project.project,contact_id:0
+msgid "Contact"
 msgstr ""
 
 #. module: service_desk
-#: model:ir.model,name:service_desk.model_project_task
-msgid "Task"
+#: field:project.task,analytic_account_id:0
+msgid "Contract/Analytic"
+msgstr ""
+
+#. module: service_desk
+#: field:project.task,location_id:0
+msgid "Location"
 msgstr ""
 
 #. module: service_desk
@@ -37,27 +41,27 @@ msgstr ""
 
 #. module: service_desk
 #: selection:project.project,use_analytic_account:0
+msgid "Optional"
+msgstr ""
+
+#. module: service_desk
+#: model:ir.model,name:service_desk.model_project_project
+msgid "Project"
+msgstr ""
+
+#. module: service_desk
+#: field:project.task,project_code:0
+msgid "Project Code"
+msgstr ""
+
+#. module: service_desk
+#: selection:project.project,use_analytic_account:0
 msgid "Required"
 msgstr ""
 
 #. module: service_desk
-#: model:ir.model,name:service_desk.model_account_analytic_account
-msgid "Analytic Account"
-msgstr ""
-
-#. module: service_desk
-#: view:project.task:0
-msgid "onchange_project(project_id)"
-msgstr ""
-
-#. module: service_desk
-#: field:account.analytic.account,contact_id:0
-msgid "Contact"
-msgstr ""
-
-#. module: service_desk
-#: field:project.task,location_id:0
-msgid "Location"
+#: model:ir.model,name:service_desk.model_project_task
+msgid "Task"
 msgstr ""
 
 #. module: service_desk
@@ -67,12 +71,7 @@ msgid "Use Analytic Account"
 msgstr ""
 
 #. module: service_desk
-#: selection:project.project,use_analytic_account:0
-msgid "Optional"
-msgstr ""
-
-#. module: service_desk
-#: field:project.task,analytic_account_id:0
-msgid "Contract/Analytic"
+#: view:project.task:service_desk.view_project_task_form_sdesk
+msgid "onchange_project(project_id)"
 msgstr ""
 

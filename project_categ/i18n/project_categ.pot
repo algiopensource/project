@@ -1,13 +1,11 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* project_categ
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 8.0alpha1\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-04 08:49+0000\n"
-"PO-Revision-Date: 2014-07-04 08:49+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -51,6 +49,11 @@ msgid "Project"
 msgstr ""
 
 #. module: project_categ
+#: field:project.project,project_ids:0
+msgid "Projects"
+msgstr ""
+
+#. module: project_categ
 #: field:project.project,task_categ_id:0
 msgid "Root Category for Tasks"
 msgstr ""
@@ -61,12 +64,7 @@ msgid "Task"
 msgstr ""
 
 #. module: project_categ
-#: view:project.task:0
+#: view:project.task:project_categ.project_task_form_view_categs
 msgid "onchange_project(project_id)"
-msgstr ""
-
-#. module: project_categ
-#: view:project.task:0
-msgid "{'required':[('task_categ_id','!=',False)]}"
 msgstr ""
 

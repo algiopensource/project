@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 08:57+0000\n"
-"PO-Revision-Date: 2015-08-11 08:57+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,6 +21,11 @@ msgstr ""
 #. module: project_stage_state
 #: selection:project.task.type,state:0
 msgid "Done"
+msgstr ""
+
+#. module: project_stage_state
+#: field:project.task.type,fold_statusbar:0
+msgid "Folded in Statusbar"
 msgstr ""
 
 #. module: project_stage_state
@@ -54,5 +57,10 @@ msgstr ""
 #. module: project_stage_state
 #: model:ir.model,name:project_stage_state.model_project_task_type
 msgid "Task Stage"
+msgstr ""
+
+#. module: project_stage_state
+#: view:project.task:project_stage_state.project_task_form_stage
+msgid "{'fold_field': 'fold_statusbar'}"
 msgstr ""
 
